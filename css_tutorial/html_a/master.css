@@ -1,0 +1,19 @@
+body{
+  background: url(https://images.unsplash.com/photo-1480497490787-505ec076689f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80);
+}
+
+div {
+  background: blue;
+  border-width: medium;
+  border-color: black;
+  border-style: groove;
+}
+
+span{
+  color: white;
+}
+
+
+h1 {
+  color: blue;
+}
