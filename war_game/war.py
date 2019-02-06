@@ -76,7 +76,8 @@ d.shuffle()
 half1,half2 = d.split_in_half()
 
 # Create Both Players
-comp = Player("computer",Hand(half1))
+compName = "Computer"
+comp = Player(compName,Hand(half1))
 name = input("What is your name player? ")
 user = Player(name,Hand(half2))
 
@@ -89,7 +90,7 @@ while user.still_has_cards() and comp.still_has_cards():
     print("It is time for a new round!")
     print("Here are the current standings: ")
     print(user.name+" count: "+str(len(user.hand.cards)))
-    print(comp.name+" count: "+str(len(comp.hand.cards)))
+    print(comp+" count: "+str(len(comp.hand.cards)))
     print("Both players play a card!")
     print('\n')
 
@@ -139,3 +140,9 @@ while user.still_has_cards() and comp.still_has_cards():
 
 print("Great Game, it lasted: "+str(total_rounds))
 print("A war occured "+str(war_count)+" times.")
+print("How many cards does the computer have? ")
+# Return a string bool
+print(str(comp.still_has_cards()))
+print("How many cards does the user have? ")
+# Return a string bool
+print(str(user.still_has_cards()))
